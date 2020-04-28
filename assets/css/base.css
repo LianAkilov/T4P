@@ -18,7 +18,7 @@ a:hover {
 }
 
 //למה זה שייך?
-.coolImg{	
+.coolImg{
 	size:60%;
 }
 
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .bread{
-	
+
 	padding:30px;
 }
 
@@ -57,8 +57,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 	opacity: 0.6;
 	font-family: "Open Sans", sans-serif;
 }
-.BoxEffect{	
-	margin-top:3px;	
+.BoxEffect{
+	margin-top:3px;
 	padding:5px;
 }
 
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   }
   .cancelbtn {
      width: 100%;
-     
+
   }
 }
 
@@ -88,12 +88,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
+  from {-webkit-transform: scale(0)}
   to {-webkit-transform: scale(1)}
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
+  from {transform: scale(0)}
   to {transform: scale(1)}
 }
 
@@ -164,14 +164,14 @@ input[type=text]:focus, input[type=password]:focus {
   height:400px;
   position:absolute;
 }
- 
+
  //פסים מסולסלים
- .contor-bg{	
-	background: url("../img/dot3.png") top right no-repeat;	
+ .contor-bg{
+	background: url("../img/dot3.png") top right no-repeat;
 }
 
 .imageOpacity{
-opacity:0.5;	
+opacity:0.5;
 }
 
 /*--------------------------------------------------------------
@@ -191,11 +191,11 @@ opacity:0.5;
     right:70%;
     margin-top: 5%;
   }
-  
+
   /*-----------------------------------------
   Social Media Buttons- כפתורים של רשתות חברתיות בפוטר
   ----------------------------------------*/
-  
+
   .fa {
     padding: 20px;
     font-size: 30px;
@@ -204,22 +204,22 @@ opacity:0.5;
     text-decoration: none;
     margin: 5px 2px;
   }
-  
+
   .fa-facebook {
     background: #3B5998;
     color: white;
   }
-  
+
   .fa-twitter {
     background: #55ACEE;
     color: white;
   }
-  
+
   .fa-youtube {
     background: #bb0000;
     color: white;
   }
-  
+
   .fa-instagram {
     background: #125688;
     color: white;
@@ -227,7 +227,7 @@ opacity:0.5;
 
 
 .containerFooter{
-	
+
   margin-left:auto;
   margin-right:auto;
 }
@@ -237,7 +237,7 @@ opacity:0.5;
 #header {
   height: 80px;
   padding: 4px;
-  background: #1c3745;  
+  background: #1c3745;
 }
 
 
@@ -248,7 +248,7 @@ opacity:0.5;
 }
 
 #header .logo h1 {
-  font-size: 35px; // הכותרת הגדולה 
+  font-size: 35px; // הכותרת הגדולה
    width:auto;
 }
 
@@ -272,14 +272,14 @@ opacity:0.5;
 
 .clear{
 	clear:both;
-	
+
 }
 
 
 /* --------- קיים כבר בסטייל2 ---------*/
 
 /* .introBotton{	 */
-  
+
     /* background-color: none; */
   /* padding: 5px 10px; */
   /* text-align: center; */
@@ -330,11 +330,11 @@ opacity:0.5;
 
 
 .img-fluid{
-	
+
 	margin-left:50px;
 	float:left;
 
-	
+
 }
 .nav-menu > ul > li {
   position: relative;
@@ -508,7 +508,7 @@ color: #ddecf5
   text-align: right;
 }
 
-    
+
 .mobile-nav-toggle i {
   color: #fff;
 }
@@ -540,7 +540,7 @@ color: #ddecf5
  #footerLogo .mobile{ // צריך להבין למה התמונה בפוטר לא זזה ימינה כשמקטינים מסך
     width: 10%px;
     height: 200px;
-  
+
   }
 
 
@@ -555,17 +555,17 @@ color: #ddecf5
 }
 
 .centerFooterObject{
-	
+
 	padding-left:80px;
 	padding-right:200px;
-		
+
 }
 
 .LogoFoter{
-	
+
 	right:100px;
 }
-    
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -595,4 +595,3 @@ color: #ddecf5
   background: #85b6cf;
   transition: background 0.2s ease-in-out;
 }
-

@@ -1,6 +1,6 @@
 <?php
 
-    $con = mysqli_connect("localhost","root","","loginsystem");
+    $con = mysqli_connect("localhost","root","","phpmyadmin");
 
     // Check connection
     if (mysqli_connect_errno()){

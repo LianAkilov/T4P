@@ -18,7 +18,7 @@ include 'includes/HomepageHeader.php';
       <div class="carousel-item active">
         <div class="carousel-container">
           <h2 class="animated fadeInDown">Welcome to <span>Team4Play</span></h2>
-          <p class="animated fadeInUp">לשחק עם חברים מעולם לא היה פשוט יותר!><br> 
+          <p class="animated fadeInUp">לשחק עם חברים מעולם לא היה פשוט יותר!><br>
             צרו משחק בתאריך מיקום ורמת מיומנות המתאימה לכם ושאר החברים יצטרפו לבד, תקימו קבוצה ותהנו :)</p>
         </div>
       </div>
@@ -36,7 +36,7 @@ include 'includes/HomepageHeader.php';
         <div class="carousel-container">
           <h2 class="animated fadeInDown">מנצחים בטורנירים</h2>
           <p class="animated fadeInUp">מלל של מנצחים בטורנירים</p>
-   
+
         </div>
       </div>
 
@@ -71,7 +71,7 @@ include 'includes/HomepageHeader.php';
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" >
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="bx bx-user-plus"></i></div>
-              <h4 class="title"><a href="" >הצטרף למשחק</a></h4>
+              <h4 class="title"><a href="includes/checkSessionJoin.php" >הצטרף למשחק</a></h4>
               <p class="description">הסתכל בלוח המשחקים הקיימים ובחר משחק שמתאים לך בתאריך, שעה מיקום ורמה, לחץ על הצטרף.. ואתה בפנים </p>
             </div>
           </div>
@@ -79,7 +79,7 @@ include 'includes/HomepageHeader.php';
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" >
             <div class="icon-box icon-box-green">
               <div class="icon"><i class="bx bx-paper-plane"></i></div>
-              <h4 class="title"><a href="">צור משחק חדש</a></h4>
+              <h4 class="title"><a href="includes/checkSessionOpenGame.php">צור משחק חדש</a></h4>
               <p class="description">צור משחק בהתאמה אישית לפי מיקום, רמה ותאריך המתאימים לך</p>
             </div>
           </div>
@@ -114,9 +114,9 @@ include 'includes/HomepageHeader.php';
 
       </div>
     </section><!-- End Why Us Section -->
-	
+
     <!-- ======= Footer  ======= -->
-  </main> 
+  </main>
 <?php
 
 include 'includes/HomepageFooter.php';

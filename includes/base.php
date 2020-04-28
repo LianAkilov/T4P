@@ -13,14 +13,22 @@ include 'header.php';
            
  <!-- ======= HTML Section ======= -->
  
- <section id="hero" class="d-flex justify-cntent-center align-items-center">
-  <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+ <main id="main">
 
- </div> 
-</section><!-- End Hero -->
+<section class="about contor-bg" >
+<div class="container RformBox">
+     <div class="row">
+      <div class="col-lg-6 contor-bg">
 
-<main id="main">
+      
+      <h1> דוגמא </h1>
 
+
+     </div>
+ </div>
+</div>
+</section>
+   
 </main>
   
 <!-- ======= Footer  ======= -->
