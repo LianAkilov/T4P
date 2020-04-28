@@ -1,6 +1,5 @@
-
 /*-------------------
- login.php page 
+ login.php page
 -------------------*/
 
 #logForm{
@@ -68,18 +67,18 @@
 model login form-  פופ אפ של התחברות או הרשמה - כרגע לא פעיל
 -------------------*/
 
-.introBotton{	
-  background-color: #1c3745; 
+.introBotton{
+  background-color: #1c3745;
   opacity: 0.6;
   padding: 10px 20px;
   text-align: center;
   text-decoration: bold;
   display: inline-block;
   font-size: 18px;
-  border-style:solid; 
+  border-style:solid;
   margin-left:2%;
   color:snow;
-  border-radius: 12px;	
+  border-radius: 12px;
   float:left;
 }
 
@@ -187,12 +186,12 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
+  from {-webkit-transform: scale(0)}
   to {-webkit-transform: scale(1)}
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
+  from {transform: scale(0)}
   to {transform: scale(1)}
 }
 
@@ -204,7 +203,7 @@ span.psw {
   }
   .cancelbtn {
      width: 100%;
-     
+
   }
 }
 
@@ -216,13 +215,13 @@ span.psw {
 //  שייך לעמוד פרופיל וגם לעמוד הרשמה
 .SendFormRdiv{
 	float:left;
-	padding-top:90px;	
+	padding-top:90px;
 }
 
 .RformBox{
 	box-shadow: 2px 2px 5px gray;
 	padding:30px;
-	
+
 }
 
 #formBox{
@@ -236,7 +235,7 @@ span.psw {
 
 .MyAreaBox{
 	padding-right:250px;
-		
+
 }
 
 
@@ -751,9 +750,3 @@ section {
     transform: rotate(360deg);
   }
 }
-
-
-
-
-
-

@@ -51,21 +51,17 @@ if(!isset($_POST['courtName']) || !isset($_POST['date'])) {
 
  ?>
 
-
   <!-- ======= HTML Section ======= -->
 
   <link href="../assets/css/test1.css" rel="stylesheet">
-  <link href="../assets/css/test2.css" rel="stylesheet">
 
-  <main id="main">
-
-
+ <main id="main">
  <section class="about contor-bg" >
  <div class="container RformBox">
       <div class="row">
        <div class="col-lg-12 contor-bg">
 
-<h3 class="title"> בחר מגרש מרשימת המגרשים בחוף "<?php echo $courtName ?>"</h3>
+       <h3 class="title"> בחר מגרש מרשימת המגרשים בחוף "<?php echo $courtName ?>"</h3>
        <br>
        <form class="" action="openGameChooseTime.php" method="post">
           <input type="hidden" name="date" value="<?php echo $date ?>">
@@ -100,64 +96,20 @@ if(!isset($_POST['courtName']) || !isset($_POST['date'])) {
             </div>
             </label>
 
-         <!--   <div id="myModal" class="modal">
-              <div class="modal-content">
-              <span class="close">&times;</span>
-              <p><?php echo $name ?></p>
-              <p><?php echo $type ?></p>
-              <p><?php echo $start ?></p>
-              <p><?php echo $lights ?></p>
-              <p><?php echo $net ?></p>
-              </div>
-            </div> -->
-
             <?php
             }
             ?>
 
           <button type="submit" class="button" name="submit">המשך</button>
        </form>
-
-
       </div>
-  </div>
+   </div>
  </div>
  </section>
 
  </main>
 
- <!-- <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("testCourt");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script> -->
-
-
-
  <!-- ======= Footer  ======= -->
-
 
  <?php
 
