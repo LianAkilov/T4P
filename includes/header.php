@@ -92,7 +92,7 @@ table {
 
     if(!isset($_SESSION["username"])) {
 
-          echo '  <a href="../sadnaS.php"><img style= width:13% src="../assets/img/logoImg.jpg.png" alt="" class="img-fluid"></a>
+          echo '  <a href="../index.php"><img style= width:13% src="../assets/img/logoImg.jpg.png" alt="" class="img-fluid"></a>
    <div class="container">
 
     <nav class="nav-menu float-right d-none d-lg-block">
@@ -105,7 +105,7 @@ table {
   </div>';
     }
     else{
-          echo '    <a href="../sadnaS.php"><img style= width:13% src="../assets/img/logoImg.jpg.png" alt="" class="img-fluid"></a>
+          echo '    <a href="../index.php"><img style= width:13% src="../assets/img/logoImg.jpg.png" alt="" class="img-fluid"></a>
    <div class="container">
 
     <nav class="nav-menu float-right d-none d-lg-block">

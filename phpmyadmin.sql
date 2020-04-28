@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: אפריל 21, 2020 בזמן 06:57 PM
--- גרסת שרת: 10.4.11-MariaDB
--- PHP Version: 7.2.29
+-- Generation Time: Apr 28, 2020 at 03:08 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -24,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `courts`
+-- Table structure for table `courts`
 --
 
 CREATE TABLE `courts` (
@@ -44,19 +45,21 @@ CREATE TABLE `courts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- הוצאת מידע עבור טבלה `courts`
+-- Dumping data for table `courts`
 --
 
 INSERT INTO `courts` (`id`, `groundType`, `lights`, `net`, `openHour`, `closeHour`, `beachName`, `courtName`, `city`, `streetName`, `streetNumber`, `latitude`, `longitude`) VALUES
 (0, 'דשא', 1, 1, '08:00', '22:00', 'בוגרשוב', '1', 'תל אביב', 'הירקון', 120, 32.0784, 34.7663),
 (1, 'חול', 1, 0, '09:00', '23:00', 'החוף של מוש', '1', 'אילת', 'הנשיא', 130, 29.539, 34.9457),
 (2, 'חול', 1, 0, '08:00', '19:30', 'בוגרשוב', '2', 'תל אביב', 'הירקון', 120, 32.0784, 34.7663),
-(4, 'חול', 1, 1, '09:00', '23:00', 'פולג', '1', 'נתניה', '-', 0, 32.2731, 34.8331);
+(4, 'חול', 1, 1, '09:00', '23:00', 'פולג', '1', 'נתניה', '-', 0, 32.2731, 34.8331),
+(5, 'חול', 0, 1, '08:00', '22:00', 'בוגרשוב', '3', 'תל אביב', 'הירקון', 120, 32.0784, 34.7663),
+(6, 'חול', 1, 1, '08:00', '22:00', 'בוגרשוב', '4', 'תל אביב', 'הירקון', 120, 32.0784, 34.7663);
 
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `games`
+-- Table structure for table `games`
 --
 
 CREATE TABLE `games` (
@@ -71,7 +74,7 @@ CREATE TABLE `games` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- הוצאת מידע עבור טבלה `games`
+-- Dumping data for table `games`
 --
 
 INSERT INTO `games` (`id`, `courtId`, `captainId`, `numberOfPlayers`, `gameDate`, `gameTime`, `playerIds`, `level`) VALUES
@@ -88,12 +91,32 @@ INSERT INTO `games` (`id`, `courtId`, `captainId`, `numberOfPlayers`, `gameDate`
 (23, 0, 446, 12, '2020-04-20', '15:00', '446', 'בינוני'),
 (24, 0, 447, 4, '2020-04-20', '19:00', '447', 'חובבן'),
 (25, 0, 447, 4, '2020-04-19', '08:00', '447', 'חובבן'),
-(26, 4, 447, 10, '2020-04-21', '18:00', '447,446', 'מקצוען');
+(26, 4, 447, 10, '2020-04-21', '18:00', '447,446', 'מקצוען'),
+(27, 0, 451, 4, '2020-04-22', '08:00', '451', 'חובבן'),
+(28, 0, 451, 4, '2020-04-21', '11:00', '451', 'חובבן'),
+(29, 0, 451, 4, '2020-04-23', '08:00', '451', 'חובבן'),
+(30, 0, 451, 4, '2020-04-25', '08:00', '451', 'חובבן'),
+(33, 0, 451, 4, '2020-04-27', '08:00', '451', 'חובבן'),
+(34, 2, 451, 4, '2020-04-27', '08:00', '451', 'חובבן'),
+(35, 5, 451, 4, '2020-04-27', '08:00', '451', 'חובבן'),
+(36, 2, 451, 4, '2020-04-27', '10:00', '451', 'חובבן'),
+(37, 6, 451, 4, '2020-04-28', '08:00', '451', 'חובבן'),
+(38, 0, 451, 4, '2020-04-29', '08:00', '451', 'חובבן'),
+(39, 2, 451, 4, '2020-04-29', '08:00', '451', 'חובבן'),
+(40, 5, 451, 4, '2020-04-29', '08:00', '451', 'חובבן'),
+(41, 1, 451, 4, '2020-04-29', '09:00', '451', 'חובבן'),
+(42, 0, 451, 4, '2020-04-30', '08:00', '451', 'חובבן'),
+(43, 0, 451, 4, '2020-04-30', '10:00', '451', 'חובבן'),
+(44, 2, 451, 4, '2020-04-30', '08:00', '451', 'חובבן'),
+(45, 5, 451, 4, '2020-04-30', '08:00', '451', 'חובבן'),
+(46, 6, 451, 4, '2020-04-30', '08:00', '451', 'חובבן'),
+(47, 0, 451, 4, '2020-05-01', '08:00', '451', 'חובבן'),
+(48, 5, 451, 4, '2020-05-02', '08:00', '451', 'חובבן');
 
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__bookmark`
+-- Table structure for table `pma__bookmark`
 --
 
 CREATE TABLE `pma__bookmark` (
@@ -107,7 +130,7 @@ CREATE TABLE `pma__bookmark` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__central_columns`
+-- Table structure for table `pma__central_columns`
 --
 
 CREATE TABLE `pma__central_columns` (
@@ -124,7 +147,7 @@ CREATE TABLE `pma__central_columns` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__column_info`
+-- Table structure for table `pma__column_info`
 --
 
 CREATE TABLE `pma__column_info` (
@@ -143,7 +166,7 @@ CREATE TABLE `pma__column_info` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__designer_settings`
+-- Table structure for table `pma__designer_settings`
 --
 
 CREATE TABLE `pma__designer_settings` (
@@ -154,7 +177,7 @@ CREATE TABLE `pma__designer_settings` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__export_templates`
+-- Table structure for table `pma__export_templates`
 --
 
 CREATE TABLE `pma__export_templates` (
@@ -168,7 +191,7 @@ CREATE TABLE `pma__export_templates` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__favorite`
+-- Table structure for table `pma__favorite`
 --
 
 CREATE TABLE `pma__favorite` (
@@ -177,7 +200,7 @@ CREATE TABLE `pma__favorite` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Favorite tables';
 
 --
--- הוצאת מידע עבור טבלה `pma__favorite`
+-- Dumping data for table `pma__favorite`
 --
 
 INSERT INTO `pma__favorite` (`username`, `tables`) VALUES
@@ -186,7 +209,7 @@ INSERT INTO `pma__favorite` (`username`, `tables`) VALUES
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__history`
+-- Table structure for table `pma__history`
 --
 
 CREATE TABLE `pma__history` (
@@ -201,7 +224,7 @@ CREATE TABLE `pma__history` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__navigationhiding`
+-- Table structure for table `pma__navigationhiding`
 --
 
 CREATE TABLE `pma__navigationhiding` (
@@ -215,7 +238,7 @@ CREATE TABLE `pma__navigationhiding` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__pdf_pages`
+-- Table structure for table `pma__pdf_pages`
 --
 
 CREATE TABLE `pma__pdf_pages` (
@@ -227,7 +250,7 @@ CREATE TABLE `pma__pdf_pages` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__recent`
+-- Table structure for table `pma__recent`
 --
 
 CREATE TABLE `pma__recent` (
@@ -236,16 +259,16 @@ CREATE TABLE `pma__recent` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Recently accessed tables';
 
 --
--- הוצאת מידע עבור טבלה `pma__recent`
+-- Dumping data for table `pma__recent`
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"phpmyadmin\",\"table\":\"courts\"},{\"db\":\"phpmyadmin\",\"table\":\"games\"},{\"db\":\"phpmyadmin\",\"table\":\"users\"}]');
+('root', '[{\"db\":\"phpmyadmin\",\"table\":\"games\"},{\"db\":\"phpmyadmin\",\"table\":\"courts\"},{\"db\":\"phpmyadmin\",\"table\":\"users\"},{\"db\":\"loginsystem\",\"table\":\"users\"},{\"db\":\"loginsystem\",\"table\":\"courts\"},{\"db\":\"cart\",\"table\":\"customers\"},{\"db\":\"cart\",\"table\":\"orders\"}]');
 
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__relation`
+-- Table structure for table `pma__relation`
 --
 
 CREATE TABLE `pma__relation` (
@@ -260,7 +283,7 @@ CREATE TABLE `pma__relation` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__savedsearches`
+-- Table structure for table `pma__savedsearches`
 --
 
 CREATE TABLE `pma__savedsearches` (
@@ -274,7 +297,7 @@ CREATE TABLE `pma__savedsearches` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__table_coords`
+-- Table structure for table `pma__table_coords`
 --
 
 CREATE TABLE `pma__table_coords` (
@@ -288,7 +311,7 @@ CREATE TABLE `pma__table_coords` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__table_info`
+-- Table structure for table `pma__table_info`
 --
 
 CREATE TABLE `pma__table_info` (
@@ -300,7 +323,7 @@ CREATE TABLE `pma__table_info` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__table_uiprefs`
+-- Table structure for table `pma__table_uiprefs`
 --
 
 CREATE TABLE `pma__table_uiprefs` (
@@ -312,16 +335,17 @@ CREATE TABLE `pma__table_uiprefs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Tables'' UI preferences';
 
 --
--- הוצאת מידע עבור טבלה `pma__table_uiprefs`
+-- Dumping data for table `pma__table_uiprefs`
 --
 
 INSERT INTO `pma__table_uiprefs` (`username`, `db_name`, `table_name`, `prefs`, `last_update`) VALUES
-('root', 'phpmyadmin', 'games', '{\"sorted_col\":\"`games`.`gameDate`  ASC\"}', '2020-04-19 16:18:57');
+('root', 'phpmyadmin', 'courts', '{\"sorted_col\":\"`courts`.`beachName`  ASC\"}', '2020-04-27 08:23:11'),
+('root', 'phpmyadmin', 'games', '{\"sorted_col\":\"`gameDate`  ASC\"}', '2020-04-28 12:47:31');
 
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__tracking`
+-- Table structure for table `pma__tracking`
 --
 
 CREATE TABLE `pma__tracking` (
@@ -340,7 +364,7 @@ CREATE TABLE `pma__tracking` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__userconfig`
+-- Table structure for table `pma__userconfig`
 --
 
 CREATE TABLE `pma__userconfig` (
@@ -350,16 +374,16 @@ CREATE TABLE `pma__userconfig` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='User preferences storage for phpMyAdmin';
 
 --
--- הוצאת מידע עבור טבלה `pma__userconfig`
+-- Dumping data for table `pma__userconfig`
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2020-04-21 16:57:05', '{\"Console\\/Mode\":\"collapse\",\"lang\":\"he\",\"NavigationWidth\":256}');
+('root', '2020-04-28 13:03:36', '{\"Console\\/Mode\":\"collapse\",\"NavigationWidth\":256}');
 
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__usergroups`
+-- Table structure for table `pma__usergroups`
 --
 
 CREATE TABLE `pma__usergroups` (
@@ -371,7 +395,7 @@ CREATE TABLE `pma__usergroups` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `pma__users`
+-- Table structure for table `pma__users`
 --
 
 CREATE TABLE `pma__users` (
@@ -382,7 +406,7 @@ CREATE TABLE `pma__users` (
 -- --------------------------------------------------------
 
 --
--- מבנה טבלה עבור טבלה `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -399,7 +423,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- הוצאת מידע עבור טבלה `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `create_datetime`, `fullName`, `age`, `phoneNumber`, `gender`, `level`) VALUES
@@ -408,146 +432,147 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `create_datetime`, `
 (447, 'dani', 'asimson90@gmail.com', '202cb962ac59075b964b07152d234b70', '2020-04-15 16:49:10', 'dani cohen', 22, 500040000, 'גבר', 'מקצוען'),
 (448, 'yosi', 'asimson90@gmail.com', '202cb962ac59075b964b07152d234b70', '2020-04-16 00:17:54', 'Yossi Cohen', 32, 593333333, 'גבר', 'מקצוען'),
 (449, 'or', 'orR@gmail.com', '202cb962ac59075b964b07152d234b70', '2020-04-16 00:25:28', 'אור רחמים', 25, 533333333, 'גבר', 'בינוני'),
-(450, 'eli', 'asimson90@gmail.com', '202cb962ac59075b964b07152d234b70', '2020-04-16 00:26:25', 'אלי כהן', 40, 524371304, 'גבר', 'מקצוען');
+(450, 'eli', 'asimson90@gmail.com', '202cb962ac59075b964b07152d234b70', '2020-04-16 00:26:25', 'אלי כהן', 40, 524371304, 'גבר', 'מקצוען'),
+(451, 'test', 'test2@gmail.com', '098f6bcd4621d373cade4e832627b4f6', '2020-04-21 19:43:52', 'testy test', 28, 546224455, 'גבר', 'מקצוען');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- אינדקסים לטבלה `courts`
+-- Indexes for table `courts`
 --
 ALTER TABLE `courts`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- אינדקסים לטבלה `games`
+-- Indexes for table `games`
 --
 ALTER TABLE `games`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- אינדקסים לטבלה `pma__bookmark`
+-- Indexes for table `pma__bookmark`
 --
 ALTER TABLE `pma__bookmark`
   ADD PRIMARY KEY (`id`);
 
 --
--- אינדקסים לטבלה `pma__central_columns`
+-- Indexes for table `pma__central_columns`
 --
 ALTER TABLE `pma__central_columns`
   ADD PRIMARY KEY (`db_name`,`col_name`);
 
 --
--- אינדקסים לטבלה `pma__column_info`
+-- Indexes for table `pma__column_info`
 --
 ALTER TABLE `pma__column_info`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `db_name` (`db_name`,`table_name`,`column_name`);
 
 --
--- אינדקסים לטבלה `pma__designer_settings`
+-- Indexes for table `pma__designer_settings`
 --
 ALTER TABLE `pma__designer_settings`
   ADD PRIMARY KEY (`username`);
 
 --
--- אינדקסים לטבלה `pma__export_templates`
+-- Indexes for table `pma__export_templates`
 --
 ALTER TABLE `pma__export_templates`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `u_user_type_template` (`username`,`export_type`,`template_name`);
 
 --
--- אינדקסים לטבלה `pma__favorite`
+-- Indexes for table `pma__favorite`
 --
 ALTER TABLE `pma__favorite`
   ADD PRIMARY KEY (`username`);
 
 --
--- אינדקסים לטבלה `pma__history`
+-- Indexes for table `pma__history`
 --
 ALTER TABLE `pma__history`
   ADD PRIMARY KEY (`id`),
   ADD KEY `username` (`username`,`db`,`table`,`timevalue`);
 
 --
--- אינדקסים לטבלה `pma__navigationhiding`
+-- Indexes for table `pma__navigationhiding`
 --
 ALTER TABLE `pma__navigationhiding`
   ADD PRIMARY KEY (`username`,`item_name`,`item_type`,`db_name`,`table_name`);
 
 --
--- אינדקסים לטבלה `pma__pdf_pages`
+-- Indexes for table `pma__pdf_pages`
 --
 ALTER TABLE `pma__pdf_pages`
   ADD PRIMARY KEY (`page_nr`),
   ADD KEY `db_name` (`db_name`);
 
 --
--- אינדקסים לטבלה `pma__recent`
+-- Indexes for table `pma__recent`
 --
 ALTER TABLE `pma__recent`
   ADD PRIMARY KEY (`username`);
 
 --
--- אינדקסים לטבלה `pma__relation`
+-- Indexes for table `pma__relation`
 --
 ALTER TABLE `pma__relation`
   ADD PRIMARY KEY (`master_db`,`master_table`,`master_field`),
   ADD KEY `foreign_field` (`foreign_db`,`foreign_table`);
 
 --
--- אינדקסים לטבלה `pma__savedsearches`
+-- Indexes for table `pma__savedsearches`
 --
 ALTER TABLE `pma__savedsearches`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `u_savedsearches_username_dbname` (`username`,`db_name`,`search_name`);
 
 --
--- אינדקסים לטבלה `pma__table_coords`
+-- Indexes for table `pma__table_coords`
 --
 ALTER TABLE `pma__table_coords`
   ADD PRIMARY KEY (`db_name`,`table_name`,`pdf_page_number`);
 
 --
--- אינדקסים לטבלה `pma__table_info`
+-- Indexes for table `pma__table_info`
 --
 ALTER TABLE `pma__table_info`
   ADD PRIMARY KEY (`db_name`,`table_name`);
 
 --
--- אינדקסים לטבלה `pma__table_uiprefs`
+-- Indexes for table `pma__table_uiprefs`
 --
 ALTER TABLE `pma__table_uiprefs`
   ADD PRIMARY KEY (`username`,`db_name`,`table_name`);
 
 --
--- אינדקסים לטבלה `pma__tracking`
+-- Indexes for table `pma__tracking`
 --
 ALTER TABLE `pma__tracking`
   ADD PRIMARY KEY (`db_name`,`table_name`,`version`);
 
 --
--- אינדקסים לטבלה `pma__userconfig`
+-- Indexes for table `pma__userconfig`
 --
 ALTER TABLE `pma__userconfig`
   ADD PRIMARY KEY (`username`);
 
 --
--- אינדקסים לטבלה `pma__usergroups`
+-- Indexes for table `pma__usergroups`
 --
 ALTER TABLE `pma__usergroups`
   ADD PRIMARY KEY (`usergroup`,`tab`,`allowed`);
 
 --
--- אינדקסים לטבלה `pma__users`
+-- Indexes for table `pma__users`
 --
 ALTER TABLE `pma__users`
   ADD PRIMARY KEY (`username`,`usergroup`);
 
 --
--- אינדקסים לטבלה `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
@@ -560,7 +585,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `games`
 --
 ALTER TABLE `games`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `pma__bookmark`
@@ -602,7 +627,7 @@ ALTER TABLE `pma__savedsearches`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=451;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=452;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

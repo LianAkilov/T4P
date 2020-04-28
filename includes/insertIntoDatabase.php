@@ -33,7 +33,7 @@
         $result   = mysqli_query($con, $query);
 
         if ($result) {
-            header("Location: ../sadnaS.php");
+            header("Location: ../index.php");
         } else {
             header("Location: R.php");
         }

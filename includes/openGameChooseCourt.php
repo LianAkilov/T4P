@@ -26,7 +26,7 @@ function checkDateValid($date) {
 }
 
 if(!isset($_POST['courtName']) || !isset($_POST['date'])) {
-  header("Location: ../SadnaS.php");
+  header("Location: ../index.php");
 } else {
   $courtName = $_POST['courtName'];
   $date = $_POST['date'];

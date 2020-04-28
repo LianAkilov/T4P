@@ -4,7 +4,7 @@ require('db.php');
 include("auth_session.php");
 
 if(!isset($_POST['court']) || !isset($_POST['date'])) {
-  header("Location: ../SadnaS.php");
+  header("Location: ../index.php");
 } else {
   $amateur="חובבן";
   $mid = "בינוני";
@@ -176,7 +176,7 @@ if(!isset($_POST['court']) || !isset($_POST['date'])) {
           if (init_xhttp.readyState == XMLHttpRequest.DONE) {
               // alertify.alert('Mobile Group',init_xhttp.responseText);
               alertify.alert('',init_xhttp.responseText);
-              setTimeout(() => {              window.location.href = "../SadnaS.php";}, 5500);
+              setTimeout(() => {              window.location.href = "../index.php";}, 5500);
           }
         }
         init_xhttp.open("POST", "insertGameToDB.php", true);

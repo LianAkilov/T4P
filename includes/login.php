@@ -21,7 +21,7 @@ include 'header.php';
         if ($rows == 1) {
             $_SESSION['username'] = $username;
             // Redirect to user dashboard page
-            header("Location: ../sadnaS.php");
+            header("Location: ../index.php");
         } else {
             header("Location: login.php");
         }
