@@ -99,7 +99,7 @@ include 'header.php';
                     }
                   ?> </p>
                 
-                <p><button class= "SendFormRdiv" id="submitA">עדכון פרטים</button></p>
+                <p><button class="btn btn-primary" >עדכון פרטים</button></p>
         </div>
       </div>	
     </div>

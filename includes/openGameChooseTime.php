@@ -150,7 +150,7 @@ if(!isset($_POST['court']) || !isset($_POST['date'])) {
             <option value="<?php echo $pro ?>"><?php echo $pro ?></option>
 
           </select>
-          <button type="submit" name="submit">הוסף משחק</button>
+          <button type="submit" class="btn btn-primary" name="submit">הוסף משחק</button>
        </form>
        </div>
 

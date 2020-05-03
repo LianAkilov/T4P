@@ -36,7 +36,7 @@ include 'headerMap.php';
     <!-- ======= HTML Section ======= -->
 
     <link href="../assets/css/test1.css" rel="stylesheet">    
-
+    <link href="../assets/css/testCoral.css" rel="stylesheet">
     <main id="main">
       
       <section class="about contor-bg">
@@ -65,7 +65,7 @@ include 'headerMap.php';
                     ?>
                 </select>
                   </br>
-                <button type="submit" value="submit">המשך</button>
+             <button type="submit" class="btn btn-primary" value="submit" id="continue">המשך</button>
               </form>
             </div>
             </div>

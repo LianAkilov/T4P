@@ -18,8 +18,8 @@ include 'includes/HomepageHeader.php';
       <div class="carousel-item active">
         <div class="carousel-container">
           <h2 class="animated fadeInDown">Welcome to <span>Team4Play</span></h2>
-          <p class="animated fadeInUp">לשחק עם חברים מעולם לא היה פשוט יותר!><br>
-            צרו משחק בתאריך מיקום ורמת מיומנות המתאימה לכם ושאר החברים יצטרפו לבד, תקימו קבוצה ותהנו :)</p>
+          <p class="animated fadeInUp">לשחק עם חברים מעולם לא היה פשוט יותר!<br>
+            צרו משחק בחוף,תאריך,מיקום ורמת מיומנות המתאימה לכם ושאר החברים יצטרפו לבד, רק תקימו קבוצה ותהנו :)</p>
         </div>
       </div>
 
@@ -34,9 +34,10 @@ include 'includes/HomepageHeader.php';
       <!-- Slide 3 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animated fadeInDown">מנצחים בטורנירים</h2>
-          <p class="animated fadeInUp">מלל של מנצחים בטורנירים</p>
-
+          <h2 class="animated fadeInDown"> חשוב לדעת</h2>
+          <p class="animated fadeInUp">בתל-אביב-יפו 13 חופים אשר משתרעים מגבול הרצליה בצפון עד גבול בת-ים בדרום באורך של 14 ק"מ, המושכים אליהם במהלך חודשי הקיץ אלפי מתרחצים מהארץ ומהעולם.
+<br><br> הפסקת שירותי ההצלה בחופים
+בהתאם להנחיות משרד הבריאות, תחנות ההצלה לא יפעלו ומתקני החוף לא יהיו זמינים עד להודעה חדשה.</p>
         </div>
       </div>
 
@@ -63,7 +64,7 @@ include 'includes/HomepageHeader.php';
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="bx bxs-face"></i></div>
-              <h4 class="title"><a href="MyPage.html">אזור אישי</a></h4>
+              <h4 class="title"><a href="includes/P.php">אזור אישי</a></h4>
               <p class="description">פרופיל, לוח משחקים עתידיים, היסטוריית המשחקים שלי</p>
             </div>
           </div>
@@ -87,7 +88,7 @@ include 'includes/HomepageHeader.php';
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" >
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">חדשות ועדכונים</a></h4>
+              <h4 class="title"><a href="#hero">חדשות ועדכונים</a></h4>
               <p class="description">לוח המנצחים של החודש</p>
             </div>
           </div>

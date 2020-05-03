@@ -100,7 +100,7 @@ if(!isset($_POST['courtName']) || !isset($_POST['date'])) {
             }
             ?>
 
-          <button type="submit" class="button" name="submit">המשך</button>
+          <button type="submit" class="btn btn-primary" name="submit" id="continue">המשך</button>
        </form>
       </div>
    </div>
