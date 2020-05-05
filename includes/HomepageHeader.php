@@ -34,7 +34,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style2.css" rel="stylesheet">
     <link href="assets/css/base.css" rel="stylesheet">
-    
+    <link href="../assets/css/test1.css" rel="stylesheet">    
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -86,9 +86,10 @@
       <li><a href="includes/aboutUs.php">מי אנחנו?</a></li>
       <li class="drop-down"><a href="#">אזור אישי</a>
         <ul>     
-          <li><a href="includes/P.php"> פרופיל</a></li>
-          <li><a href="#">היסטוריית המשחקים שלי</a></li>
-          <li><a href="#">משחקים קרובים</a></li>
+          <li><a href="includes/Profile.php"> פרופיל</a></li>
+          <li><a href="includes/myGames.php">משחקים קרובים</a></li>
+          <li><a href="includes/testdb.php">בדיקת DB</a></li>
+
         </ul>
       </li>
 

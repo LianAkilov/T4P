@@ -29,23 +29,37 @@ include 'header.php';
 ?>
 
 
-
-<!---  צריך להעתיק את כל המבנה של המיין ואז לנסות עיצובים חדשים  ---->
-<!--- -------------------------------------------------------------  ---->
-
-
-<form id="logForm" method="post" name="login" style="margin-top: 10%">
-        <h1 class="login-title">Login</h1>
-        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
-        <input type="password" class="login-input" name="password" placeholder="Password"/>
-        <input type="submit" value="Login" name="submit" class="login-button"/>
-        <p class="link"> להרשמה לחץ <a href="R.php">כאן</a></p>
-</form>
+<main id="main">
+<section class="about contor-bg" >
+<div class="container" id="LoginRformBox">
+     <div class="row">
+      <div class="col-lg-12 contor-bg">
 
 
+	  <form action="" method="POST" id="loginPage">
+        <div class="imgcontainer">
+        <img src="../assets/img/about-us2.jpg" alt="Avatar" class="avatar">
+        </div>
 
- <!---  לא לשכוח להדביק את שורות 51-53  ---->
-<!--- -------------------------------------------------------------  ---->
+        <div class="container">
+        <label for="username"><b>שם משתמש</b></label>
+        <input type="text" placeholder="הכנס שם משתמש" name="username" required>
+
+        <label for="password"><b>סיסמא</b></label>
+        <input type="password" placeholder="הכנס סיסמא" name="password" required>
+        
+		<button type="submit" class="btn btn-lg btn-primary btn-block">התחבר</button>
+		<button type="button" class="btn btn-lg btn-success btn-block"><a href="Registration.php" style="color: white"> אין לך משתמש? הרשם כאן </a></button> 
+        </div>
+     </form>
+
+
+     </div>
+ </div>
+</div>
+</section>
+</main>
+
 
 <?php
     }

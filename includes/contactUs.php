@@ -53,7 +53,7 @@ include 'header.php';
     <div class="col-lg-6">
       <div class="carousel-item active">
         <div class="carousel-container">
-          <img class="imageOpacity" src= "../assets/img/pop1.png" >
+          <img class="imageOpacity" src="../assets/img/Pop1.jpg" >
         </div>
       </div>	
       </div>

@@ -35,7 +35,7 @@
         if ($result) {
             header("Location: ../index.php");
         } else {
-            header("Location: R.php");
+            header("Location: Registration.php");
         }
     } else {}
 ?>

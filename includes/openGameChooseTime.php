@@ -97,10 +97,7 @@ if(!isset($_POST['court']) || !isset($_POST['date'])) {
 
   <!-- ======= HTML Section ======= -->
 
-  <link href="../assets/css/test1.css" rel="stylesheet">    
-
-  <main id="main">
-
+<main id="main">
  <section class="about contor-bg" >
  <div class="container RformBox">
       <div class="row">
@@ -116,7 +113,7 @@ if(!isset($_POST['court']) || !isset($_POST['date'])) {
        <h3>חוף "<?php echo $court['beachName'] ?>"</h3>
        <h3><?php echo $court['city'] ?> - רחוב <?php echo $court['streetName'] . " ". $court['streetNumber'] ?></h3>
        <h4>שעות הפעילות של המגרש הן <?php echo $court['openHour'] ?> עד <?php echo $court['closeHour'] ?></h4>
-	    </div>
+	      </div>
 
        
        <div class="container">
@@ -176,7 +173,7 @@ if(!isset($_POST['court']) || !isset($_POST['date'])) {
           if (init_xhttp.readyState == XMLHttpRequest.DONE) {
               // alertify.alert('Mobile Group',init_xhttp.responseText);
               alertify.alert('',init_xhttp.responseText);
-              setTimeout(() => {              window.location.href = "../index.php";}, 5500);
+              setTimeout(() => {              window.location.href = "../index.php";}, 1500);
           }
         }
         init_xhttp.open("POST", "insertGameToDB.php", true);

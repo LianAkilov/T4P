@@ -1,4 +1,67 @@
+/* -----------table ---------- */
 
+th, td {
+  padding-right: 65px;
+  font-size: 70%;
+}
+
+
+table {
+  width: 100%;
+}
+
+/* -----------login page ---------- */
+
+#loginPage form {border: 3px solid #f1f1f1;}
+
+
+#LoginRformBox{
+
+  width: 60%;
+  box-shadow: 2px 2px 5px gray;
+  padding:30px;
+}
+
+#loginPage input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#loginPage .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+#loginPage img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+#loginPage .container {
+  padding: 16px;
+}
+
+#loginPage span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+ #loginPage span.psw {
+     display: block;
+     float: none;
+  }
+ #loginPage .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*----------------other pages--------------------- */
 #testPhoto{	
 	width:200px;
 	height:200px;
@@ -10,8 +73,8 @@
 }
 
 #map {
-  height: 300px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
   float: left;
 
 }
@@ -115,7 +178,7 @@ text-align: center;
 }
 
 /* HIDE RADIO */
-[type=radio] { 
+#testCourt [type=radio] { 
   position: absolute;
   opacity: 0;
   width: 0;
@@ -123,12 +186,12 @@ text-align: center;
 }
 
 /* IMAGE STYLES */
-[type=radio] + img {
+#testCourt [type=radio] + img {
   cursor: pointer;
 }
 
 /* CHECKED STYLES */
-[type=radio]:checked + img {
+#testCourt [type=radio]:checked + img {
   outline: 2px solid #f00;
 }
 
