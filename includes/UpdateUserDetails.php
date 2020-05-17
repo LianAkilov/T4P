@@ -101,13 +101,20 @@ include 'header.php';
                     while($row = mysqli_fetch_array($rs)) {
                     $gender = $row['gender'];
                     }
-                  ?>
+                    if($gender=="גבר") {?>
+                      <label for="exampleFormControlSelect1"></label>
+                      <select class="form-control" name="gender" id="exampleFormControlSelect1">
+                      <option selected value="גבר">גבר</option>
+                      <option value="אישה">אישה</option>
+                      </select>  
+                    <?php } else { ?>
                       <label for="exampleFormControlSelect1"></label>
                       <select class="form-control" name="gender" id="exampleFormControlSelect1">
                       <option value="גבר">גבר</option>
-                      <option value="אישה">אישה</option>
-                      </select>  
-                </p>
+                      <option selected value="אישה">אישה</option>
+                      </select>                       
+                    <?php } ?>
+                 </p>
 
                  <p class= "ProfileBox"><span style="font-weight:bold"> רמת משחק: </span>
                   <?php 
@@ -116,13 +123,31 @@ include 'header.php';
                     while($row = mysqli_fetch_array($rs)) {
                     $level = $row['level'];
                     }
-                  ?>
+                    if($level=="חובבן") { ?>
+                 
+                     <label for="exampleFormControlSelect1"> </label>
+                      <select class="form-control" name="level" id="exampleFormControlSelect1">
+                      <option selected value="חובבן">חובבן</option>
+                      <option value="בינוני">בינוני</option>
+                      <option value="מקצוען">מקצוען</option>
+                      </select> 
+                 <?php } if($level=="בינוני") { ?>
+                  
                        <label for="exampleFormControlSelect1"> </label>
                       <select class="form-control" name="level" id="exampleFormControlSelect1">
                       <option value="חובבן">חובבן</option>
-                      <option value="בינוני">בינוני</option>
+                      <option selected value="בינוני">בינוני</option>
                       <option value="מקצוען">מקצוען</option>
                       </select>   
+                  <?php } if($level=="מקצוען") {?>
+                  <label for="exampleFormControlSelect1"> </label>
+                      <select class="form-control" name="level" id="exampleFormControlSelect1">
+                      <option value="חובבן">חובבן</option>
+                      <option value="בינוני">בינוני</option>
+                      <option selected value="מקצוען">מקצוען</option>
+                      </select> 
+                      <?php } ?>
+
                 </p></br>
                 
                 <p><button type="submit" class="btn btn-primary" >שמור שינויים </button></p>
