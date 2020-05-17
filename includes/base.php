@@ -4,6 +4,8 @@ require('db.php');
 include("auth_session.php");
 ?>
 
+   <!-- ======= Header  ======= -->
+
 <?php
 
 include 'header.php';
@@ -32,8 +34,7 @@ include 'header.php';
 </main>
   
 <!-- ======= Footer  ======= -->
-
-    
+  
 <?php
 
 include 'footer.php';

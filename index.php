@@ -61,31 +61,31 @@ include 'includes/HomepageHeader.php';
       <div class="container">
 
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+          <div class="col-md-6 col-lg-3 ">
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="bx bxs-face"></i></div>
-              <h4 class="title"><a href="includes/P.php">אזור אישי</a></h4>
-              <p class="description">פרופיל, לוח משחקים עתידיים, היסטוריית המשחקים שלי</p>
+              <h4 class="title"><a href="includes/checkSessionOpenProfile.php">אזור אישי</a></h4>
+              <p class="description">פרופיל ולוח משחקים עתידי</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" >
+          <div class="col-md-6 col-lg-3 " >
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="bx bx-user-plus"></i></div>
               <h4 class="title"><a href="includes/checkSessionJoin.php" >הצטרף למשחק</a></h4>
-              <p class="description">הסתכל בלוח המשחקים הקיימים ובחר משחק שמתאים לך בתאריך, שעה מיקום ורמה, לחץ על הצטרף.. ואתה בפנים </p>
+              <p class="description">הצטרפות למשחק קיים </p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" >
+          <div class="col-md-6 col-lg-3 " >
             <div class="icon-box icon-box-green">
               <div class="icon"><i class="bx bx-paper-plane"></i></div>
               <h4 class="title"><a href="includes/checkSessionOpenGame.php">צור משחק חדש</a></h4>
-              <p class="description">צור משחק בהתאמה אישית לפי מיקום, רמה ותאריך המתאימים לך</p>
+              <p class="description">צור משחק בהתאמה אישית </p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" >
+          <div class="col-md-6 col-lg-3 " >
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4 class="title"><a href="#hero">חדשות ועדכונים</a></h4>

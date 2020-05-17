@@ -13,15 +13,12 @@ include 'header.php';
 
  
 <main id="main">		 
-  <section class="bread ">
-      <div class="container">
-            <h1 class= "BigCoteret" >קצת עלינו</h1>
-     </div>
-  </section>
-
  <section class="about contor-bg" >
   <div class="container">
    <div class="row">
+            <div class="container">
+            <h1 class= "BigCoteret" >קצת עלינו</h1>
+            </div>
 
           <div class="col-lg-6 pt-4 pt-lg-0" style= text-align:right color:black;>
              <h3>Team4Play</h3>
@@ -38,10 +35,11 @@ include 'header.php';
 		 <div class="col-lg-6">
       <div class="carousel-item active">
         <div class="carousel-container">
-          <img class="imageOpacity" src= "../assets/img/pop3S.png">
+          <img class="imageOpacity" src= "../assets/img/pop3S.png" id="contactUsLogo">
         </div>
       </div>	
-    </div>
+     </div>
+
    </div>
   </div>
   </section><!-- End About Section -->

@@ -45,6 +45,9 @@ if(!isset($_POST['courtName']) || !isset($_POST['date'])) {
 }
 
  ?>
+
+  <!-- ======= Header ======= -->
+
  <?php
 
  include 'header.php';
@@ -53,18 +56,19 @@ if(!isset($_POST['courtName']) || !isset($_POST['date'])) {
 
   <!-- ======= HTML Section ======= -->
 
-  <link href="../assets/css/test1.css" rel="stylesheet">
-
  <main id="main">
  <section class="about contor-bg" >
  <div class="container RformBox">
       <div class="row">
        <div class="col-lg-12 contor-bg">
 
-       <h3 class="title"> בחר מגרש מרשימת המגרשים בחוף "<?php echo $courtName ?>"</h3>
+       <h3 class="title">אנא בחר מגרש מרשימת המגרשים בחוף "<?php echo $courtName ?>"</h3>
+       <h5> ** לבחירת מגרש יש לבחור בתמונה המתאימה **</h5>
        <br>
        <form class="" action="openGameChooseTime.php" method="post">
           <input type="hidden" name="date" value="<?php echo $date ?>">
+          <input type="hidden" name="courtName" value="<?php echo $courtName ?>">
+
           <?php
           foreach($courtsArr as $court) {
               $name = "שם המגרש: ". $court['courtName'];
@@ -101,6 +105,7 @@ if(!isset($_POST['courtName']) || !isset($_POST['date'])) {
             ?>
 
           <button type="submit" class="btn btn-primary" name="submit" id="continue">המשך</button>
+
        </form>
       </div>
    </div>

@@ -3,19 +3,14 @@ require('db.php');
 include("auth_session.php");
 ?>
 
+   <!-- ======= Header  ======= -->
+
 <?php
-
 include 'header.php';
-
+include 'HeaderErrors.php';
 ?>
 
  <!-- ======= HTML Section ======= -->
- <!-- ======= הקישורים הנ''ל רלוונטיים רק לעמוד הנוכחי
-  ומתנגשים עם הקישורים שבהאדר הגלובלי ולכן נמצאים כאן ======= -->
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <main id="main">
 <section class="about contor-bg" >

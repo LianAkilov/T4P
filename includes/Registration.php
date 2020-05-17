@@ -1,10 +1,13 @@
+ <!-- ======= Header ======= -->
 
 <?php
 
 include 'header.php';
 
 ?>
-       
+
+    <!-- ======= HTML Section ======= -->
+    
 <main id="main">
    <section class="about contor-bg" >
       <div class="container RformBox">
@@ -43,22 +46,6 @@ include 'header.php';
                       <input type="reset" value="נקה טופס" class="btn btn-primary">
                       <input type="submit" value="שלח" class="btn btn-primary">
 
-                      <!--
-                      <h4> מין </h4>
-                      <input type="radio" name="gender" value="גבר">
-                      <label for="male" >גבר</label><br>
-                      <input type="radio" name="gender" value="אישה">
-                      <label for="female">אישה</label><br>
-
-                      <h4> רמת משחק </h4>
-                      <input type="radio" class="radio-inline" name="level" value="חובבן">
-                      <label for="amt">חובבן</label><br>
-                      <input type="radio" class="radio-inline" name="level" value="בינוני">
-                      <label for="mid">בינוני</label><br>
-                      <input type="radio" class="radio-inline" name="level" value="מקצוען">
-                      <label for="pro">מקצוען</label><br>
-                       -->
-      
                  </form>
              </div>
          </div>
@@ -68,7 +55,8 @@ include 'header.php';
       
 </main>
     
-    
+  <!-- ======= Footer ======= -->
+   
 <?php
 
 include 'footer.php';

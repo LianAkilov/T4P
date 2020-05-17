@@ -20,13 +20,17 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3 style= text-align:center>Find us</h3>
-          
-            <div class="social-links mt-3" style= text-align:center>
+            <div class="" style= text-align:center>
               <a href="#" class="fa fa-facebook"></a>
               <a href="#" class="fa fa-twitter"></a>
               <a href="#" class="fa fa-youtube"></a>
               <a href="#" class="fa fa-instagram"></a>
             </div>
+          </div>
+
+          <div class="volleyAnimation col-lg-6 col-md-6 footer-info">
+            <img src="../assets/img/v5.png" alt="" id="volleyBall">
+
           </div>
 		 
         </div>

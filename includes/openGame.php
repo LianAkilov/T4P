@@ -27,15 +27,15 @@ fwrite($file, $xmlData);
 fclose($file);
 ?>
 
+ <!-- ======= Header ======= -->
+
 <?php
 
 include 'headerMap.php';
 
 ?>
 
-    <!-- ======= HTML Section ======= -->
-
-    <link href="../assets/css/testCoral.css" rel="stylesheet">
+  <!-- ======= HTML Section ======= -->
 
     <main id="main">
       <section class="about">
@@ -66,11 +66,12 @@ include 'headerMap.php';
                   </br>
              <button type="submit" class="btn btn-primary" value="submit" id="continue">המשך</button>
               </form>
+              
             </div>
             </div>
 
       <div class="col-lg-6 contor-bg">
-      <div id="map">
+      <div id="map" id="container">
 
       <script>
       var customLabel = {
@@ -148,19 +149,14 @@ include 'headerMap.php';
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIkYnBGfs9hqyIL9H5iAxzD6H070fDiIE&callback=initMap">
       </script>
 
-        </div>
-        </div>
-        </div>
-        </div>
-      </section>
-
-    </main>
-
-   
+    </div>
+    </div>
+    </div>
+    </div>
+ </section>
+</main>
 
     <!-- ======= Footer  ======= -->
-
-
     <?php
 
     include 'footer.php';

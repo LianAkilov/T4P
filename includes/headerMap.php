@@ -40,9 +40,7 @@
 
 
   <!-- Template Main CSS File -->
-  <link href="../assets/css/style2.css" rel="stylesheet">
-  <link href="../assets/css/base.css" rel="stylesheet">
-  <link href="../assets/css/test1.css" rel="stylesheet">    
+  <link href="../assets/css/TP4Style.css" rel="stylesheet">
   <link href="../assets/css/alertify.css" rel="stylesheet">
   <link href="../assets/css/alertify.min.css" rel="stylesheet">
   <link href="../assets/css/alertify.rtl.css" rel="stylesheet">
@@ -54,41 +52,30 @@
 
 <body>
 
-  <!-- ======= מציג כפתור התחבר אם מנותקים ולהפך ======= -->
+  <!-- ======= תפריט כשמחוברים או מנותקים ======= -->
 
   <header id="header" class="fixed-top header-transparent">
 
-    <?php
+  <?php
 
     if(!isset($_SESSION["username"])) {
 
-          echo '<button class="loginButton"><a href="login.php">login </a> </button>';
-    }
-    else{
-          echo '<button class="loginButton"><a href="logout.php">log out </a> </button>'; }
-   ?>
-
-      <!-- ======= תפריט כשמחוברים או מנותקים ======= -->
-
-
-      <?php
-
-    if(!isset($_SESSION["username"])) {
-
-          echo '  <a href="../index.php"><img style= width:13% src="../assets/img/logoImg.jpg.png" alt="" class="img-fluid"></a>
+          echo '  <a href="../index.php"><img style= width:160px src="../assets/img/logoImg.jpg.png" alt="" class="img-fluid"></a>
    <div class="container">
 
     <nav class="nav-menu float-right d-none d-lg-block">
     <ul>
       <li><a href="contactUs.php">דברו איתנו</a></li>
       <li><a href="aboutUs.php">מי אנחנו?</a></li>
-	  <li><a href="#">אזור אישי</a>
+    <li><a href="login.php">אזור אישי</a>
+    <li><a href="login.php" style="color:#0099ff; margin-left:15px">התחבר</a></li>
+
     </ul>
    </nav> <!--- .nav-menu -->
   </div>';
     }
     else{
-          echo '    <a href="../index.php"><img style= width:13% src="../assets/img/logoImg.jpg.png" alt="" class="img-fluid"></a>
+          echo '<a href="../index.php"><img style= width:160px src="../assets/img/logoImg.jpg.png" alt="" class="img-fluid"></a>
    <div class="container">
 
     <nav class="nav-menu float-right d-none d-lg-block">
@@ -98,16 +85,15 @@
       <li class="drop-down"><a href="#">אזור אישי</a>
         <ul>
           <li><a href="Profile.php"> פרופיל</a></li>
-          <li><a href="#">היסטוריית המשחקים שלי</a></li>
           <li><a href="myGames.php">משחקים קרובים</a></li>
         </ul>
       </li>
+      <li><a href="logout.php" style="color:#ff3300; margin-left:15px">התנתק</a>
+
 
     </ul>
    </nav> <!--- .nav-menu -->
   </div> '; }
    ?>
 
-
-  </header>
-  <!-- End Header -->
+</header> <!-- End Header -->

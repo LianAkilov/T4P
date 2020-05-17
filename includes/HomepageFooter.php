@@ -3,7 +3,7 @@
          <div class="container">
          <div class="row" >
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-3  footer-contact">
            <h4 style= text-align:center>Contact Us</h4>
            <p style= text-align:center>
 
@@ -18,15 +18,19 @@
             </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-info">
+          <div class="col-lg-3  footer-info">
             <h3 style= text-align:center>Find us</h3>
-          
-            <div class="social-links mt-3" style= text-align:center>
+            <div class="" style= text-align:center>
               <a href="#" class="fa fa-facebook"></a>
               <a href="#" class="fa fa-twitter"></a>
               <a href="#" class="fa fa-youtube"></a>
               <a href="#" class="fa fa-instagram"></a>
             </div>
+          </div>
+          
+
+          <div class="volleyAnimation col-lg-6  footer-info">
+            <img src="assets/img/v5.png" alt="" id="volleyBall">
           </div>
 		 
         </div>
@@ -53,6 +57,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Social Network icons-->
 
 </body>
 </html>

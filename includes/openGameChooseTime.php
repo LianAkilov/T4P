@@ -3,14 +3,55 @@
 require('db.php');
 include("auth_session.php");
 
-if(!isset($_POST['court']) || !isset($_POST['date'])) {
-  header("Location: ../index.php");
-} else {
+$date = $_POST['date'];
+$courtName = $_POST['courtName'];
+
+if(!isset($_POST['court'])) { ?>}   
+ 
+ <!-- ======= Section - no court choosen ======= -->
+
+<?php
+include 'header.php';
+include 'HeaderErrors.php';
+?>
+
+<main id="main">
+<section class="about contor-bg" >
+<div class="container RformBox">
+     <div class="row">
+      <div class="col-lg-12 contor-bg">
+
+      <div class="container">
+     <div class="alert alert-success">
+    <p style="font-size: 18px"><strong>לא נבחר מגרש!</strong> יש ללחוץ על תמונת המגרש על מנת לבחור במגרש הרצוי </p></br>
+
+     <form action="openGameChooseCourt.php" method="POST">
+     <input type="hidden" name="date" value="<?php echo $date ?>">
+     <input type="hidden" name="courtName" value="<?php echo $courtName ?>">
+     <button type="submit" class="btn btn-primary" name="submit">חזרה לבחירת מגרש</button>
+     </form>
+
+     </div>
+     </div>
+     </div>
+ </div>
+</div>
+</section>
+</main>
+  
+<!-- ======= Footer - no court choosen ======= -->
+   
+<?php
+include 'footer.php';
+?>
+
+<!-- ======= else - Court choosen successfully ======= -->
+
+<?php } else {
   $amateur="חובבן";
   $mid = "בינוני";
   $pro = "מקצוען";
   $court_id = $_POST['court'];
-  $date = $_POST['date'];
   $query_courts = "SELECT * FROM courts WHERE id = " . $court_id;
   $courts   = $con->query($query_courts);
   $court = [];
@@ -86,18 +127,20 @@ if(!isset($_POST['court']) || !isset($_POST['date'])) {
         array_push($times,$time);
       }
     }
-}
+
  ?>
+
+  <!-- ======= Header ======= -->
+
  <?php
 
  include 'header.php';
 
  ?>
 
+  <!-- ======= HTML Section - court choosen successfully ======= -->
 
-  <!-- ======= HTML Section ======= -->
-
-<main id="main">
+ <main id="main">
  <section class="about contor-bg" >
  <div class="container RformBox">
       <div class="row">
@@ -199,7 +242,7 @@ $(document).ready(function(){
 
 </script>
 
- <!-- ======= Footer  ======= -->
+ <!-- ======= Footer ======= -->
 
 
  <?php
@@ -207,3 +250,7 @@ $(document).ready(function(){
  include 'footer.php';
 
  ?>
+
+ <!-- ======= end of 'else' condition in line 56 ======= -->
+
+<?php } ?>

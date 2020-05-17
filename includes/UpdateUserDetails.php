@@ -30,72 +30,103 @@ include 'header.php';
           <div class="carousel-item active"> 
           <div class="carousel-container">
              </br>
-                <p class= "ProfileBox"><span style="font-weight:bold"> שם מלא: </span>
+             <form class="form-grpop" action="insertUpdatedDetailsIntoDB.php" method="post">
+                <p class= "ProfileBox"><span style="font-weight:bold"> שם מלא: </span> 
                   <?php 
                     $strSQL = "SELECT fullName FROM users WHERE username = '".$_SESSION['username']."'";
                     $rs = mysqli_query($con, $strSQL);
                     while($row = mysqli_fetch_array($rs)) {
-                    echo $row['fullName'];
-                    }
-                  ?> </p>
+                    $fullName = $row['fullName'];
+                     }
+                  ?> 
+                <label for="fullName"></label>
+                <input type="text" name="fullName" placeholder="<?php echo $fullName ?>">  
+                </p>
                 <p class= "ProfileBox"><span style="font-weight:bold"> שם משתמש: </span>
                   <?php 
                     $strSQL = "SELECT username FROM users WHERE username = '".$_SESSION['username']."'";
                     $rs = mysqli_query($con, $strSQL);
                     while($row = mysqli_fetch_array($rs)) {
-                    echo $row['username'];
+                    $username = $row['username'];
                     }
-                  ?> </p>
+                  ?> 
+                 <label for="username"></label>
+                <input type="text" name="username" placeholder="<?php echo $username ?>">  
+                </p>
 
-                <p class= "ProfileBox"><span style="font-weight:bold"> סיסמא: ******** </span>
+                <p class= "ProfileBox"><span style="font-weight:bold"> סיסמא: </span>
+                <label for="password"></label>
+                <input type="password" name="password" placeholder="********"> </p>
 
                 <p class= "ProfileBox"><span style="font-weight:bold">  מייל: </span>
                   <?php 
                     $strSQL = "SELECT email FROM users WHERE username = '".$_SESSION['username']."'";
                     $rs = mysqli_query($con, $strSQL);
                     while($row = mysqli_fetch_array($rs)) {
-                    echo $row['email'];
+                    $email = $row['email'];
                     }
-                  ?> </p>
+                  ?> 
+                <label for="email"></label>
+                <input type="text" name="email" placeholder="<?php echo $email ?>">   
+                </p>
                 <p class= "ProfileBox"><span style="font-weight:bold"> גיל: </span>
                   <?php 
                     $strSQL = "SELECT age FROM users WHERE username = '".$_SESSION['username']."'";
                     $rs = mysqli_query($con, $strSQL);
                     while($row = mysqli_fetch_array($rs)) {
-                    echo $row['age'];
+                    $age = $row['age'];
                     }
-                  ?> </p>
+                  ?>
+                <label for="age"></label>
+                <input type="number" style="display: block" name="age" placeholder="<?php echo $age ?>">  
+                </p>
 
                  <p class= "ProfileBox"><span style="font-weight:bold"> מספר טלפון: </span>
                   <?php 
                     $strSQL = "SELECT phoneNumber FROM users WHERE username = '".$_SESSION['username']."'";
                     $rs = mysqli_query($con, $strSQL);
                     while($row = mysqli_fetch_array($rs)) {
-                    echo '0'. $row['phoneNumber'];
+                    // echo '0'. $row['phoneNumber']; //
+                    $phoneNumber = $row['phoneNumber'];
                     }
-                  ?> </p>
+                  ?>
+                 <label for="phoneNumber"></label>
+                <input type="number" style="display: block" name="phoneNumber" placeholder="<?php echo '0'. $phoneNumber ?>"> 
+                </p>
 
                  <p class= "ProfileBox"><span style="font-weight:bold"> מין: </span>
                   <?php 
                     $strSQL = "SELECT gender FROM users WHERE username = '".$_SESSION['username']."'";
                     $rs = mysqli_query($con, $strSQL);
                     while($row = mysqli_fetch_array($rs)) {
-                    echo $row['gender'];
+                    $gender = $row['gender'];
                     }
-                  ?> </p>
+                  ?>
+                      <label for="exampleFormControlSelect1"></label>
+                      <select class="form-control" name="gender" id="exampleFormControlSelect1">
+                      <option value="גבר">גבר</option>
+                      <option value="אישה">אישה</option>
+                      </select>  
+                </p>
 
                  <p class= "ProfileBox"><span style="font-weight:bold"> רמת משחק: </span>
                   <?php 
                     $strSQL = "SELECT level FROM users WHERE username = '".$_SESSION['username']."'";
                     $rs = mysqli_query($con, $strSQL);
                     while($row = mysqli_fetch_array($rs)) {
-                    echo $row['level'];
+                    $level = $row['level'];
                     }
-                  ?> </p>
-                  
-                 <form action="UpdateUserDetails.php">
-                 <input type="submit" class="btn btn-primary" value="לעדכון פרטים" />
-                 </form>
+                  ?>
+                       <label for="exampleFormControlSelect1"> </label>
+                      <select class="form-control" name="level" id="exampleFormControlSelect1">
+                      <option value="חובבן">חובבן</option>
+                      <option value="בינוני">בינוני</option>
+                      <option value="מקצוען">מקצוען</option>
+                      </select>   
+                </p></br>
+                
+                <p><button type="submit" class="btn btn-primary" >שמור שינויים </button></p>
+                </form>
         </div>
       </div>	
     </div>
