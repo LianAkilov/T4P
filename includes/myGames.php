@@ -218,15 +218,14 @@ include 'header.php';
                     <thead class="thead-dark">
                         <tr>
                         <th>חוף</th>
-                        <th>כתובת</th>
                         <th>תאריך</th>
                         <th>שעה</th>
                         <th>סוג קרקע</th>
                         <th>רמה</th>
                         <th>מספר שחקנים </th>
-                        <th>שם הקפטן</th>
-                        <th>מספר טלפון קפטן</th> 
                         <th> יציאה|מחיקה </th>
+                        <th> פרטים נוספים </th>
+
                         </tr>
                     </thead>
 
@@ -251,6 +250,8 @@ include 'header.php';
                                   $game['groundType'] = $row['groundType'];
                                   $game['address'] = $row['streetName'] . " " . $row['streetNumber'] . ", " . $row['city'];
                                   $game['beachName'] = $row['beachName'];
+                                  $game['courtNumber'] = $row['courtName'];
+
                               }
                           }
                       ?>
@@ -261,34 +262,57 @@ include 'header.php';
                         <input type="hidden" name="gameId" value="<?php echo $game['id'] ?>">
                         <tr class="tableRow">
                           <td><?php echo $game['beachName'] ?></td>
-                          <td><?php echo $game['address'] ?></td>
                           <td><?php echo $game['gameDate'] ?></td>
                           <td><?php echo $game['gameTime'] ?></td>
                           <td><?php echo $game['groundType'] ?></td>
                           <td><?php echo $game['level'] ?></td>
                           <td><?php echo $game['currentNumberOfPlayers'] . '/' . $game['numberOfPlayers'] ?></td>
-                          <td><?php echo $game['captainName'] ?></td>
-                          <td><?php echo '0'. $game['captainPhone'] ?></td> 
                           <td> <button class="btn btn-primary mb-2  btn-sm" type="submit"> מחק משחק </button> </td>
-                          </tr>
                         </form>
+                        <td><form class="" action="myGamesMoreDetails.php" method="post">
+                        <input type="hidden" name="gameId" value="<?php echo $game['id'] ?>">
+                        <input type="hidden" name="beachName" value="<?php  echo $game['beachName'] ?>">
+                        <input type="hidden" name="courtNumber" value="<?php  echo $game['courtNumber'] ?>">
+                        <input type="hidden" name="address" value="<?php echo $game['address'] ?>">
+                        <input type="hidden" name="gameDate" value="<?php echo $game['gameDate'] ?>">
+                        <input type="hidden" name="gameTime" value="<?php echo $game['gameTime'] ?>">
+                        <input type="hidden" name="groundType" value="<?php echo $game['groundType'] ?>">
+                        <input type="hidden" name="level" value="<?php echo $game['level'] ?>">
+                        <input type="hidden" name="numberOfPlayers" value="<?php echo $game['numberOfPlayers'] ?>">
+                        <input type="hidden" name="currentNumberOfPlayers" value="<?php echo $game['currentNumberOfPlayers'] ?>">
+                        <input type="hidden" name="captainName" value="<?php echo $game['captainName'] ?>">
+                        <input type="hidden" name="captainPhone" value="<?php echo $game['captainPhone'] ?>">
+                         <button class="btn btn-primary mb-2  btn-sm" type="submit"> פרטים נוספים </button>
+                        </form></td></tr>
+
 
                       <?php } else { ?>
                         <form class="" action="removePlayer.php" method="post">
                         <input type="hidden" name="gameId" value="<?php echo $game['id'] ?>">
                         <tr>
                           <td><?php echo $game['beachName'] ?></td>
-                          <td><?php echo $game['address'] ?></td>
                           <td><?php echo $game['gameDate'] ?></td>
                           <td><?php echo $game['gameTime'] ?></td>
                           <td><?php echo $game['groundType'] ?></td>
                           <td><?php echo $game['level'] ?></td>
                           <td><?php echo $game['currentNumberOfPlayers'] . '/' . $game['numberOfPlayers'] ?></td>
-                          <td><?php echo $game['captainName'] ?></td>
-                          <td><?php echo $game['captainPhone'] ?></td> 
                           <td> <button class="btn btn-primary mb-2  btn-sm" type="submit"> יציאה מהמשחק  </button> </td>
-                        </tr>
                         </form>
+                        <td><form class="" action="myGamesMoreDetails.php" method="post">
+                        <input type="hidden" name="gameId" value="<?php echo $game['id'] ?>">
+                        <input type="hidden" name="beachName" value="<?php  echo $game['beachName'] ?>">
+                        <input type="hidden" name="courtNumber" value="<?php  echo $game['courtNumber'] ?>">
+                        <input type="hidden" name="address" value="<?php echo $game['address'] ?>">
+                        <input type="hidden" name="gameDate" value="<?php echo $game['gameDate'] ?>">
+                        <input type="hidden" name="gameTime" value="<?php echo $game['gameTime'] ?>">
+                        <input type="hidden" name="groundType" value="<?php echo $game['groundType'] ?>">
+                        <input type="hidden" name="level" value="<?php echo $game['level'] ?>">
+                        <input type="hidden" name="numberOfPlayers" value="<?php echo $game['numberOfPlayers'] ?>">
+                        <input type="hidden" name="currentNumberOfPlayers" value="<?php echo $game['currentNumberOfPlayers'] ?>">
+                        <input type="hidden" name="captainName" value="<?php echo $game['captainName'] ?>">
+                        <input type="hidden" name="captainPhone" value="<?php echo $game['captainPhone'] ?>">
+                         <button class="btn btn-primary mb-2  btn-sm" type="submit"> פרטים נוספים </button>
+                        </form></td></tr>
 
                       <?php } ?>
                           

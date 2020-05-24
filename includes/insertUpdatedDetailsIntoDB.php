@@ -40,6 +40,18 @@
             $password = mysqli_real_escape_string($con, $password);
         }
 
+        if($_POST['identificationNumber'] == null){
+            $strSQL = "SELECT identificationNumber FROM users WHERE username = '".$_SESSION['username']."'";
+            $rs = mysqli_query($con, $strSQL);
+            while($row = mysqli_fetch_array($rs)) {
+                $identificationNumber = $row['identificationNumber'];
+            }
+        }
+        else{
+            $identificationNumber = stripslashes($_POST['identificationNumber']);
+            $identificationNumber = mysqli_real_escape_string($con, $identificationNumber);
+        }
+
         if($_POST['fullName'] == null){
             $strSQL = "SELECT fullName FROM users WHERE username = '".$_SESSION['username']."'";
             $rs = mysqli_query($con, $strSQL);
@@ -101,7 +113,7 @@
         }
 
 
-        $query = "UPDATE `users` SET username='$username', password='$password', email='$email', fullName='$fullName', age='$age', phoneNumber='$phoneNumber', gender='$gender', level='$level' WHERE `username` = '".$_SESSION['username']."'";
+        $query = "UPDATE `users` SET username='$username', password='$password',identificationNumber='$identificationNumber', email='$email', fullName='$fullName', age='$age', phoneNumber='$phoneNumber', gender='$gender', level='$level' WHERE `username` = '".$_SESSION['username']."'";
              
         $result = mysqli_query($con, $query);
 

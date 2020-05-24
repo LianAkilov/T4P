@@ -63,13 +63,7 @@ include 'header.php';
               <h4 class="title">פרטי הקפטן</h4>
               <h6><?php echo "שם הקפטן: ". $_POST['captainName'] ?></h6>
               <h6><?php echo "מספר טלפון: ". '0'. $_POST['captainPhone'] ?></h6><br>
-              <form class="" action="javascript:joinGame()" method="post">
-                <input type="hidden" name="gameId" value="<?php echo $_POST['gameId'] ?>">
-                <input type="hidden" name="gameDate" value="<?php echo $_POST['gameDate'] ?>">
-                <input type="hidden" name="gameTime" value="<?php echo $_POST['gameTime'] ?>">
-                <button type="submit" class="btn btn-primary" name="submit">להצטרפות למשחק</button>
-                <input type="button" class="btn btn-success" onclick="location.href='joinGame.php';" value="חזרה למשחקים פעילים" />
-              </form>
+            <input type="button" class="btn btn-primary" onclick="location.href='myGames.php';" value="חזרה למשחקים שלי" />
               </div>
              </div>
             </div>
@@ -161,31 +155,6 @@ include 'header.php';
   </section>
 </main>
     
-    <script type="text/javascript">
-    function joinGame() {
-      var gameId = document.getElementsByName("gameId")[0].value;
-      var date = document.getElementsByName("gameDate")[0].value;
-     var time = document.getElementsByName("gameTime")[0].value;
-      alertify.confirm('','האם להצטרף משחק בתאריך ' + date + ' בשעה ' + time + '?',
-        function() {
-          var init_xhttp = new XMLHttpRequest();
-          init_xhttp.onreadystatechange = function() {
-            if (init_xhttp.readyState == XMLHttpRequest.DONE) {
-              // alertify.alert('Mobile Group',init_xhttp.responseText);
-              alertify.alert('', init_xhttp.responseText);
-              setTimeout(() => {
-                window.location.href = "../index.php";
-              }, 1500);
-            }
-          }
-          init_xhttp.open("POST", "addPlayerTOExistingGame.php", true);
-          init_xhttp.setRequestHeader('Content-type',
-            'application/x-www-form-urlencoded');
-          init_xhttp.send('gameId=' + gameId);
-        },
-        function() {});
-    }
-    </script>
 
     <!-- ======= Footer  ======= -->
 

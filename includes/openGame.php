@@ -31,14 +31,14 @@ fclose($file);
 
 <?php
 
-include 'headerMap.php';
+include 'header.php';
 
 ?>
 
   <!-- ======= HTML Section ======= -->
 
     <main id="main">
-      <section class="about">
+      <section>
         <div class="container RformBox">
           <div class="row">
             <div class="col-lg-6 contor-bg">
@@ -46,13 +46,13 @@ include 'headerMap.php';
 
               <form class="openGameForm" action="openGameChooseCourt.php" method="post">
                 <h3 class="title">בחר תאריך</h3>
-                <div class=" form-control-lg">
+                <div class=" form-control">
                 <input type="date" name="date" value="<?= date('Y-m-d', time()); ?>" />
                 </div>
                 </br></br></br>
 
                 <h3 class="title">בחר חוף</h3>
-                <select class="form-control form-control-lg" name="courtName">
+                <select class="form-control" name="courtName">
                   <?php
                     foreach($courtsArr as $courtBeach){
                     ?>

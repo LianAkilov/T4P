@@ -49,6 +49,15 @@ include 'header.php';
 
                 <p class= "ProfileBox"><span style="font-weight:bold"> סיסמא: ******** </span>
 
+                <p class= "ProfileBox"><span style="font-weight:bold"> תעודת זהות: </span>
+                  <?php 
+                    $strSQL = "SELECT identificationNumber FROM users WHERE username = '".$_SESSION['username']."'";
+                    $rs = mysqli_query($con, $strSQL);
+                    while($row = mysqli_fetch_array($rs)) {
+                    echo $row['identificationNumber'];
+                    }
+                  ?> </p>
+
                 <p class= "ProfileBox"><span style="font-weight:bold">  מייל: </span>
                   <?php 
                     $strSQL = "SELECT email FROM users WHERE username = '".$_SESSION['username']."'";

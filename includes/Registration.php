@@ -21,6 +21,8 @@ include 'header.php';
                       <input type="text" name="username" placeholder="TheAmazingOr" required><br>
                       <label for="password">סיסמא</label><br>
                       <input type="password" name="password" placeholder="*********" required><br>
+                      <label for="identificationNumber">ת''ז</label><br>
+                      <input type="number" class="form-group" name="identificationNumber" placeholder="204066985"><br>
                       <label for="email">מייל</label><br>
                       <input type="text" name="email" placeholder="orR@gmail.com" required><br>
                       <label for="fullName">שם מלא</label><br>

@@ -245,12 +245,14 @@ include 'header.php';
                                   $game['groundType'] = $row['groundType'];
                                   $game['address'] = $row['streetName'] . " " . $row['streetNumber'] . ", " . $row['city'];
                                   $game['beachName'] = $row['beachName'];
+                                  $game['courtNumber'] = $row['courtName'];
                               }
                           }
                       ?>
                       <form class="" action="joinGameMoreDetails.php" method="post">
                         <input type="hidden" name="gameId" value="<?php echo $game['id'] ?>">
                         <input type="hidden" name="beachName" value="<?php  echo $game['beachName'] ?>">
+                        <input type="hidden" name="courtNumber" value="<?php  echo $game['courtNumber'] ?>">
                         <input type="hidden" name="address" value="<?php echo $game['address'] ?>">
                         <input type="hidden" name="gameDate" value="<?php echo $game['gameDate'] ?>">
                         <input type="hidden" name="gameTime" value="<?php echo $game['gameTime'] ?>">

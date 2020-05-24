@@ -9,20 +9,17 @@
   <title>Team4Play</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
-  <script src="../assets/js/alertify.js"></script>
-  <script src="../assets/js/alertify.min.js"></script>
 
-  <!-- bootstrap CreateGame -->
+  <!-- bootstrap CreateGame 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -45,6 +42,8 @@
   <link href="../assets/css/alertify.min.css" rel="stylesheet">
   <link href="../assets/css/alertify.rtl.css" rel="stylesheet">
   <link href="../assets/css/alertify.rtl.min.css" rel="stylesheet">  
+  <script src="../assets/js/alertify.js"></script>
+  <script src="../assets/js/alertify.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
@@ -86,6 +85,8 @@
         <ul>
           <li><a href="Profile.php"> פרופיל</a></li>
           <li><a href="myGames.php">משחקים קרובים</a></li>
+          <li><a href="openGame.php">יצירת משחק חדש</a></li>
+          <li><a href="joinGame.php">הצטרפות למשחק</a></li>
         </ul>
       </li>
       <li><a href="logout.php" style="color:#ff3300; margin-left:15px">התנתק</a>

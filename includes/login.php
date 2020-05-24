@@ -46,7 +46,9 @@ include 'header.php';
         <input type="password" placeholder="הכנס סיסמא" name="password" required>
         
 		<button type="submit" class="btn btn-lg btn-primary btn-block">התחבר</button>
-		<button type="button" class="btn btn-lg btn-success btn-block"><a href="Registration.php" style="color: white"> אין לך משתמש? הרשם כאן </a></button> 
+        <button type="button" class="btn btn-lg btn-success btn-block"><a href="Registration.php" style="color: white"> אין לך משתמש? הרשם כאן </a></button> 
+        <button type="button" class="btn btn-lg btn-danger btn-block"><a href="forgotPassword.php" style="color: white"> שכחת סיסמא? לחץ כאן </a></button> 
+
         </div>
         </form>
 
@@ -81,7 +83,9 @@ include 'header.php';
         <input type="password" placeholder="הכנס סיסמא" name="password" required>
         
 		<button type="submit" class="btn btn-lg btn-primary btn-block">התחבר</button>
-		<button type="button" class="btn btn-lg btn-success btn-block"><a href="Registration.php" style="color: white"> אין לך משתמש? הרשם כאן </a></button> 
+        <button type="button" class="btn btn-lg btn-success btn-block"><a href="Registration.php" style="color: white"> אין לך משתמש? הרשם כאן </a></button> 
+        <button type="button" class="btn btn-lg btn-danger btn-block"><a href="forgotPassword.php" style="color: white"> שכחת סיסמא? לחץ כאן </a></button> 
+
         </div>
      </form>
 

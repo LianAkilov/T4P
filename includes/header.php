@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-
     <title>Team4Play</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
     <!-- Favicons -->
     <link href="../assets/img/favicon.png" rel="icon">
@@ -79,6 +80,8 @@
         <ul>
           <li><a href="Profile.php"> פרופיל</a></li>
           <li><a href="myGames.php">משחקים קרובים</a></li>
+          <li><a href="openGame.php">יצירת משחק חדש</a></li>
+          <li><a href="joinGame.php">הצטרפות למשחק</a></li>
         </ul>
       </li>
       <li><a href="logout.php" style="color:#ff3300; margin-left:15px">התנתק</a>

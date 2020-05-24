@@ -58,6 +58,18 @@ include 'header.php';
                 <label for="password"></label>
                 <input type="password" name="password" placeholder="********"> </p>
 
+                <p class= "ProfileBox"><span style="font-weight:bold"> תעודת זהות: </span>
+                  <?php 
+                    $strSQL = "SELECT identificationNumber FROM users WHERE username = '".$_SESSION['username']."'";
+                    $rs = mysqli_query($con, $strSQL);
+                    while($row = mysqli_fetch_array($rs)) {
+                    $identificationNumber = $row['identificationNumber'];
+                    }
+                  ?>
+                <label for="identificationNumber"></label>
+                <input type="number" style="display: block" name="identificationNumber" placeholder="<?php echo $identificationNumber ?>">  
+                </p>
+
                 <p class= "ProfileBox"><span style="font-weight:bold">  מייל: </span>
                   <?php 
                     $strSQL = "SELECT email FROM users WHERE username = '".$_SESSION['username']."'";
