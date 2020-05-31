@@ -79,7 +79,7 @@
       <li class="drop-down"><a href="#">אזור אישי</a>
         <ul>
           <li><a href="Profile.php"> פרופיל</a></li>
-          <li><a href="myGames.php">משחקים קרובים</a></li>
+          <li><a href="myGames.php">המשחקים שלי</a></li>
           <li><a href="openGame.php">יצירת משחק חדש</a></li>
           <li><a href="joinGame.php">הצטרפות למשחק</a></li>
         </ul>
