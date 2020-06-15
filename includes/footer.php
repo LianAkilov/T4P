@@ -30,7 +30,6 @@
 
           <div class="volleyAnimation col-lg-6 col-md-6 footer-info">
             <img src="../assets/img/v5.png" alt="" id="volleyBall">
-
           </div>
 		 
         </div>

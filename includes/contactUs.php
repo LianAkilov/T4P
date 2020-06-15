@@ -24,7 +24,7 @@ include 'header.php';
            </div>
           
            <div class="col-lg-6">
-            <form action="" method="post" role="form" class="php-email-form">
+            <form action="" method="" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="שם מלא" data-rule="minlen:4" data-msg="הכנס לפחות 4 תווים" />
@@ -44,7 +44,8 @@ include 'header.php';
                 <div class="validate"></div>
               </div>
               
-             <button type="submit" class="btn btn-primary" id="contactUsButton">שלח פנייה</button>
+             <!-- <button type="submit" class="btn btn-primary" id="contactUsButton">שלח פנייה</button> -->
+             <button onclick="window.location.href='landingPage.php'" class="btn btn-primary" id="contactUsButton">שלח פנייה</button>
             </form>
           </div>
 		   
