@@ -93,8 +93,9 @@ include 'header.php';
       <div class="container RformBox">
            <div class="row ">
             <div class="col-lg-12 contor-bg">
+            <h1 class="BigCoteret"> המשחקים שלי </h1>
               <section class="about contor-bg">
-                    <form class="form-inline" action="joinGame.php" method="post">
+                    <form class="form-inline" action="myGames.php" method="post">
                         
                       <?php
                         if(isset($_POST['date'])) {

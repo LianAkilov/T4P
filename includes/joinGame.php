@@ -91,6 +91,7 @@ include 'header.php';
       <div class="container RformBox">
            <div class="row">
             <div class="col-lg-12 contor-bg">
+            <h1 class="BigCoteret"> הצטרפות למשחק קיים </h1>
               <section class="about contor-bg">
                     <form class="form-inline" action="joinGame.php" method="post">
                       <?php

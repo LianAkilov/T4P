@@ -63,12 +63,12 @@ include 'header.php';
               <h4 class="title">פרטי הקפטן</h4>
               <h6><?php echo "שם הקפטן: ". $_POST['captainName'] ?></h6>
               <h6><?php echo "מספר טלפון: ". '0'. $_POST['captainPhone'] ?></h6><br>
-              <form class="" action="javascript:joinGame()" method="post">
+             <form class="" action="javascript:joinGame()" method="post"> 
                 <input type="hidden" name="gameId" value="<?php echo $_POST['gameId'] ?>">
                 <input type="hidden" name="gameDate" value="<?php echo $_POST['gameDate'] ?>">
                 <input type="hidden" name="gameTime" value="<?php echo $_POST['gameTime'] ?>">
                 <button type="submit" class="btn btn-primary" name="submit">להצטרפות למשחק</button>
-                <input type="button" class="btn btn-success" onclick="location.href='joinGame.php';" value="חזרה למשחקים פעילים" />
+                <input type="button" class="btn btn-success" onclick="location.href='joinGame.php';" value="חזרה למשחקים פעילים" /> 
               </form>
               </div>
              </div>
@@ -174,11 +174,11 @@ include 'header.php';
               // alertify.alert('Mobile Group',init_xhttp.responseText);
               alertify.alert('', init_xhttp.responseText);
               setTimeout(() => {
-                window.location.href = "../index.php";
+                window.location.href = "myGames.php";
               }, 1500);
             }
           }
-          init_xhttp.open("POST", "addPlayerTOExistingGame.php", true);
+          init_xhttp.open("POST", "addPlayerToExistingGame.php", true);
           init_xhttp.setRequestHeader('Content-type',
             'application/x-www-form-urlencoded');
           init_xhttp.send('gameId=' + gameId);

@@ -73,8 +73,7 @@
           <li><a href="includes/Profile.php"> פרופיל</a></li>
           <li><a href="includes/myGames.php">המשחקים שלי</a></li>
           <li><a href="includes/openGame.php">יצירת משחק חדש</a></li>
-          <li><a href="includes/joinGame.php">הצטרפות למשחק</a></li>
-          <li><a href="includes/testdb.php">בדיקת DB</a></li>
+          <li><a href="includes/joinGame.php">הצטרפות למשחק קיים</a></li>
         </ul>
       </li>
       <li><a href="includes/logout.php" style="color:#ff3300; margin-left:15px">התנתק</a>

@@ -18,7 +18,7 @@ include 'includes/HomepageHeader.php';
       <div class="carousel-item active">
         <div class="carousel-container">
           <h2 class="animated fadeInDown">Welcome to <span>Team4Play</span></h2>
-          <p class="animated fadeInUp">לשחק עם חברים מעולם לא היה פשוט יותר!<br>
+          <p class="animated fadeInUp indexPage" style="font-size: 150%;">לשחק עם חברים מעולם לא היה פשוט יותר!<br>
             צרו משחק בחוף,תאריך,מיקום ורמת מיומנות המתאימה לכם ושאר החברים יצטרפו לבד, רק תקימו קבוצה ותהנו :)</p>
         </div>
       </div>
@@ -27,7 +27,7 @@ include 'includes/HomepageHeader.php';
       <div class="carousel-item">
         <div class="carousel-container">
           <h2 class="animated fadeInDown">חם מהשטח</h2>
-          <p class="animated fadeInUp"> בחוף גורדון הוקמו עוד 4 מגרשים לרווחת הציבור, איזה כיף לנו.</p>
+          <p class="animated fadeInUp indexPage" style="font-size: 150%;"> בחוף גורדון הוקמו עוד 4 מגרשים לרווחת הציבור, איזה כיף לנו.</p>
         </div>
       </div>
 
@@ -35,7 +35,7 @@ include 'includes/HomepageHeader.php';
       <div class="carousel-item">
         <div class="carousel-container">
           <h2 class="animated fadeInDown"> חשוב לדעת</h2>
-          <p class="animated fadeInUp">בתל-אביב-יפו 13 חופים אשר משתרעים מגבול הרצליה בצפון עד גבול בת-ים בדרום באורך של 14 ק"מ, המושכים אליהם במהלך חודשי הקיץ אלפי מתרחצים מהארץ ומהעולם.
+          <p class="animated fadeInUp indexPage" style="font-size: 150%;">בתל-אביב-יפו 13 חופים אשר משתרעים מגבול הרצליה בצפון עד גבול בת-ים בדרום באורך של 14 ק"מ, המושכים אליהם במהלך חודשי הקיץ אלפי מתרחצים מהארץ ומהעולם.
 <br><br> הפסקת שירותי ההצלה בחופים
 בהתאם להנחיות משרד הבריאות, תחנות ההצלה לא יפעלו ומתקני החוף לא יהיו זמינים עד להודעה חדשה.</p>
         </div>
@@ -72,7 +72,7 @@ include 'includes/HomepageHeader.php';
           <div class="col-md-6 col-lg-3 " >
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="bx bx-user-plus"></i></div>
-              <h4 class="title"><a href="includes/checkSessionJoin.php" >הצטרף למשחק</a></h4>
+              <h4 class="title"><a href="includes/checkSessionJoin.php" >הצטרף למשחק קיים</a></h4>
               <p class="description">הצטרפות למשחק קיים </p>
             </div>
           </div>

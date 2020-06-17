@@ -38,6 +38,7 @@ if(!isset($_POST['gameId'])) {
                 }
               } else {
                 echo "כבר נרשמת למשחק זה.";
+                
               }
             } else {
               echo "המשחק כבר מלא ב". $row['numberOfPlayers'] . " שחקנים";
